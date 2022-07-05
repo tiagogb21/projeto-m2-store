@@ -25,7 +25,7 @@
       <p>Taxa de instalação</p>
       <p>Grátis</p>
     </article>
-    <!--  -->
+
     <!-- Produtos -->
     <section class="product__container" v-for="product in productList" v-bind:key="product.id">
       <h3 class="title">{{ product }}</h3>
