@@ -28,7 +28,7 @@
 
     <!-- Produtos -->
     <section class="product__container" v-for="product in productList" v-bind:key="product.id">
-      <h3 :class="title">{{ product }}</h3>
+      <h3 class="title">{{ product }}</h3>
 
       <!-- Fixo -->
       <article v-if="product === 'Fixo'" class="fixo__container">
@@ -84,7 +84,7 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'HomeProducts',
@@ -117,16 +117,12 @@ export default {
     },
   },
   created() {
-    this.t();
+    this.$store.dispatch('getProductItems');
   },
   updated() {
     this.price = this.$store.state.totalPrice;
   },
   methods: {
-    ...mapActions(['getProductItems']),
-    t() {
-      this.getProductItems();
-    },
     message() {
       const { cartItems } = this.$store.state;
       const a = `

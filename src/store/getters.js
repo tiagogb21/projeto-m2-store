@@ -1,15 +1,15 @@
 const getters = {
-  productItems: (state) => () => state.productItems,
+  productItems: (state) => state.productItems,
   // Acessando o nome das categorias:
 
-  productList: (state) => () => Object.keys(state.productItems),
+  productList: (state) => Object.keys(state.productItems),
   // Acessando o valor armazenado no objeto fixo:
 
-  productFixo: (state) => () => Object.values(state.productItems)[0][0],
+  productFixo: (state) => Object.values(state.productItems)[0][0],
 
-  productTV: (state) => () => Object.values(state.productItems)[1].map((item) => item),
+  productTV: (state) => Object.values(state.productItems)[1].map((item) => item),
 
-  productInternet: (state) => () => Object.values(state.productItems)[2].map((item) => item),
+  productInternet: (state) => Object.values(state.productItems)[2].map((item) => item),
 
   addProductToCart: (state) => (name, prod) => {
     state.cartItems[name].product = prod.title;
@@ -19,7 +19,7 @@ const getters = {
     return state.totalPrice;
   },
 
-  removeAllItems: (state) => () => {
+  removeAllItems: (state) => {
     state.totalPrice = 0;
     const resetCart = {
       internet: {
