@@ -1,0 +1,38 @@
+{
+  "Fixo": [
+    {
+      "id": 1,
+      "title": "Ilimitado Fixo Brasil",
+      "price": 0
+    }
+  ],
+  "TV": [
+    {
+      "id": 1,
+      "title": "Ultimate HD",
+      "price": 150
+    },
+    {
+      "id": 2,
+      "title": "Full HD",
+      "price": 80
+    }
+  ],
+  "Internet": [
+    {
+      "id": 1,
+      "title": "100 MB",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "title": "200 MB",
+      "price": 150
+    },
+    {
+      "id": 3,
+      "title": "300 MB",
+      "price": 180
+    }
+  ]
+}
