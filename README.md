@@ -1,34 +1,62 @@
 # m2-store
 
-## Project setup
+## Setup do Projeto:
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compila e recerrega para desenvolvimento
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compila e minifica para produção
 ```
 npm run build
 ```
 
-### Run your unit tests
+### Para compilar a imagem Docker da aplicação Vue:
 ```
-npm run test:unit
-```
-
-### Run your end-to-end tests
-```
-npm run test:e2e
+docker build -t vue/m2-store .
 ```
 
-### Lints and fixes files
+### Para executar a aplicação Vue em um contêiner Docker:
 ```
-npm run lint
+docker run -it -p 8080:80 --rm --name dockerize-vuejs-app-1 vue/m2-store
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Para executar a aplicação Vue utilizando docker-compose:
+```
+docker-compose build --no-cache
+```
+
+### Para encerrar o processo: CTRL + C
+
+<br />
+
+### O projeto utiliza:
+
+ <p> <strong>Router:</strong> Para criar as rotas de navegação. </p>
+ 
+ <p> <strong>Store:</strong> Gerenciamento de Estado Centralizado. </p>
+
+<br />
+
+### Objetivo - organização e padronização:
+
+- Lint
+- Prettier
+- Editorconfig
+
+<br />
+
+### Usuário:
+
+ <p> O usuário pode escolher apenas um plano por categoria. <p>
+
+ <p> Deve escolher primeiro o plano de internet, para então escolher o plano de TV e telefonia fixa <p>
+
+ <p> O valor total do plano pode ser encontrado no final da página. </p>
+ 
+ <p> No final da página existe um botão "REMOVE" que irá retirar os itens do carrinho e zerar o valor total do plano. </p>
+
