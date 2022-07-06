@@ -52,8 +52,6 @@ docker-compose build --no-cache
 
 ### Usuário:
 
- <p> O usuário pode escolher apenas um plano por categoria. <p>
-
  <p> Deve escolher primeiro o plano de internet, para então escolher o plano de TV e telefonia fixa <p>
  
  <p> Somente um plano pode ser escolhido por vez. <p>
@@ -64,3 +62,4 @@ docker-compose build --no-cache
  
  <p> No final da página existe um botão "REMOVE" que irá retirar os itens do carrinho e zerar o valor total do plano. </p>
 
+ <p> Depois de escolhido o plano o botão continuar irá ser habilitado, ao ser clicado irá mostrar um alert mostrando qual foi o plano escolhido. </p>
