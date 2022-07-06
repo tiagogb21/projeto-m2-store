@@ -1,3 +1,4 @@
+/* eslint-disable comma-dangle */
 const getters = {
   productItems: (state) => state.productItems,
   // Acessando o nome das categorias:
@@ -14,7 +15,10 @@ const getters = {
   addProductToCart: (state) => (name, prod) => {
     state.cartItems[name].product = prod.title;
     state.cartItems[name].price = prod.price;
-    const sumTotalPrice = Object.values(state.cartItems).reduce((acc, curr) => acc + curr.price);
+    const sumTotalPrice = Object.values(state.cartItems).reduce(
+      (acc, curr) => acc + Number(curr.price),
+      0
+    );
     state.totalPrice = sumTotalPrice;
     return state.totalPrice;
   },

@@ -127,6 +127,7 @@ export default {
       const { cartItems } = this.$store.state;
       const a = `
         Plano escolhido:
+
         Plano de Internet: ${cartItems.internet.product}
         Plano de TV: ${cartItems.tv.product}
         Plano Fixo: ${cartItems.fixo.product}
