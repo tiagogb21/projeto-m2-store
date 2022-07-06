@@ -55,6 +55,10 @@ docker-compose build --no-cache
  <p> O usuário pode escolher apenas um plano por categoria. <p>
 
  <p> Deve escolher primeiro o plano de internet, para então escolher o plano de TV e telefonia fixa <p>
+ 
+ <p> Somente um plano pode ser escolhido por vez. <p>
+ 
+ <p> Ao passar o botão sobre o produto este irá responder com uma alteração em seu background </p> 
 
  <p> O valor total do plano pode ser encontrado no final da página. </p>
  
