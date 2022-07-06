@@ -14,7 +14,7 @@
       <article class="box__price__option">
         <p>R$ {{ this.$store.state.totalPrice }} / mês</p>
         <!-- Botão para Apagar o Plano Selecionado -->
-        <button type="button" @click="removeAllItems" :disabled="isDisabled">
+        <button class="button-remove" type="button" @click="removeAllItems" :disabled="isDisabled">
           <img src="../../assets/remove.png" alt="remove item" />
         </button>
       </article>
@@ -241,5 +241,13 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.button-remove {
+  width: 30%;
+}
+
+.button-remove img {
+  width: 50%;
 }
 </style>
